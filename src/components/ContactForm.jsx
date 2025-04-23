@@ -19,19 +19,24 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
+      const formPayload = new FormData();
+  
+      for (const key in formData) {
+        formPayload.append(key, formData[key]);
+      }
+  
       const response = await fetch(`${import.meta.env.VITE_API_URL}/api/send-inquiry`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: formPayload, // no headers here!
       });
-
+  
       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-
+  
       await response.json();
       navigate("/thank-you");
-
+  
       setFormData({
         firstName: "",
         lastName: "",

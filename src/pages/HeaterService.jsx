@@ -12,7 +12,7 @@ export default function HeaterService() {
 
       <section
         className="bg-secondary text-secondarytext overflow-hidden py-24 px-4 text-center"
-        >
+      >
 
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Heater Service & Repair</h1>
@@ -25,8 +25,29 @@ export default function HeaterService() {
         </div>
       </section>
 
+      <section className="max-w-6xl mx-auto px-4 py-8 text-left">
+        <h2 className="text-3xl font-semibold mb-6 text-center md:text-left">
+          What’s Included in a Climate Co Heater Service?
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ul className="list-disc list-inside space-y-2">
+            <li>Carbon monoxide testing</li>
+            <li>Cleaning of burners and components</li>
+            <li>Checking flue and ventilation systems</li>
+            <li>Inspection of ignition systems</li>
+          </ul>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Testing of thermostat functionality</li>
+            <li>General safety check</li>
+            <li>Service documentation provided</li>
+            <li>Friendly advice from a licensed tech</li>
+          </ul>
+        </div>
+      </section>
+
+
       {/* Content Section */}
-      <section className="max-w-6xl mx-auto px-4 py-16 md:text-left">
+      <section className="max-w-6xl mx-auto px-4 py-8 md:text-left">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <img src={heaterServiceImage} alt="Gas Heater Service" className="w-full md:w-1/2 rounded shadow-md" />
           <div className="md:w-1/2">
