@@ -35,7 +35,7 @@ export default function ContactFormQuote() {
     if (switchBoardImage) formPayload.append("switchBoardImage", switchBoardImage);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/send-inquiry`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/send-inquiry`, {
         method: "POST",
         body: formPayload,
       });
