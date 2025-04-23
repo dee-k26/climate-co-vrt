@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import heaterServiceImage from "../assets/gas-heater.jpg";
-import heaterBg from '../assets/gas-heater-small.jpg';
+import heaterService from "../assets/heaterservice.jpg";
 
 export default function HeaterService() {
   return (
@@ -25,23 +25,28 @@ export default function HeaterService() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-8 text-left">
-        <h2 className="text-3xl font-semibold mb-6 text-center md:text-left">
-          What’s Included in a Climate Co Heater Service?
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <ul className="list-disc list-inside space-y-2">
-            <li>Carbon monoxide testing</li>
-            <li>Cleaning of burners and components</li>
-            <li>Checking flue and ventilation systems</li>
-            <li>Inspection of ignition systems</li>
-          </ul>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Testing of thermostat functionality</li>
-            <li>General safety check</li>
-            <li>Service documentation provided</li>
-            <li>Friendly advice from a licensed tech</li>
-          </ul>
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          {/* Text */}
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-3xl font-semibold mb-4">Noticed Any of These?</h2>
+            <p className="mb-4">It might be time to get your gas heater checked.</p>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Strange smells or noises</li>
+              <li>Yellow pilot light or flame</li>
+              <li>Rooms not heating properly</li>
+              <li>It’s been over 12 months since your last service</li>
+            </ul>
+          </div>
+
+          {/* Image */}
+          <div className="md:w-1/2">
+            <img
+              src={heaterService}
+              alt="Gas Heater Inspection"
+              className="rounded shadow-md w-full"
+            />
+          </div>
         </div>
       </section>
 
@@ -62,6 +67,29 @@ export default function HeaterService() {
           </div>
         </div>
       </section>
+
+      <section className="max-w-6xl mx-auto px-4 py-8 text-left justify-center">
+        <h2 className="text-3xl font-semibold mb-6 text-center md:text-left">
+          What’s Included in a Climate Co Heater Service?
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ul className="list-disc list-inside space-y-2">
+            <li>Carbon monoxide testing</li>
+            <li>Cleaning of burners and components</li>
+            <li>Checking flue and ventilation systems</li>
+            <li>Inspection of ignition systems</li>
+          </ul>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Testing of thermostat functionality</li>
+            <li>General safety check</li>
+            <li>Service documentation provided</li>
+            <li>Friendly advice from a licensed tech</li>
+          </ul>
+        </div>
+      </section>
+
+
+
 
       {/* CTA Section */}
       <section className="bg-secondary py-16 px-4 text-center">
