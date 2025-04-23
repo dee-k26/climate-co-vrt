@@ -52,7 +52,7 @@ export default function HeaterService() {
 
 
       {/* Content Section */}
-      <section className="max-w-6xl mx-auto px-4 py-8 md:text-left">
+      <section className="max-w-6xl mx-auto px-4 py-8 md:text-left border-t border-gray-200">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <img src={heaterServiceImage} alt="Gas Heater Service" className="w-full md:w-1/2 rounded shadow-md" />
           <div className="md:w-1/2">
@@ -68,7 +68,7 @@ export default function HeaterService() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-8 text-left justify-center">
+      <section className="max-w-6xl mx-auto px-4 py-8 text-left justify-center border-t border-gray-200">
         <h2 className="text-3xl font-semibold mb-6 text-center md:text-left">
           What’s Included in a Climate Co Heater Service?
         </h2>
