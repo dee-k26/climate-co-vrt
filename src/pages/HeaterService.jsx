@@ -42,6 +42,11 @@ export default function HeaterService() {
               <li>Rooms not heating properly</li>
               <li>It’s been over 12 months since your last service</li>
             </ul>
+            <div className="mt-6 text-center">
+              <a href="#contact-form" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+                Book a Service
+              </a>
+            </div>
           </div>
 
 
@@ -57,7 +62,7 @@ export default function HeaterService() {
         </div>
       </section>
       {/* Types of Heaters */}
-      <section className="max-w-6xl mx-auto px-4 py-12 border-t border-gray-200 text-left">
+      <section className="max-w-6xl mx-auto px-4 py-12 border-t border-gray-200 md:text-left">
         <h2 className="text-3xl font-semibold mb-4 text-center md:text-left">We Service All Residential Heating Systems</h2>
         <p className="mb-6">
           Whether you’ve got a modern split system or a decorative gas fireplace, our licensed techs have you covered:
@@ -79,7 +84,7 @@ export default function HeaterService() {
 
       {/* Content Section */}
       {/* Why Service Matters */}
-      <section className="max-w-6xl mx-auto px-4 py-12 border-t border-gray-200 text-left">
+      <section className="max-w-6xl mx-auto px-4 py-12 border-t border-gray-200 md:text-left">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <img src={heaterServiceImage} alt="Gas Heater Service" className="w-full md:w-1/2 rounded shadow-md" />
           <div className="md:w-1/2">
@@ -98,7 +103,7 @@ export default function HeaterService() {
       </section>
 
 
-      <section className="max-w-6xl mx-auto px-4 py-8 text-left justify-center border-t border-gray-200">
+      <section className="max-w-6xl mx-auto px-4 py-8 md:text-left justify-center border-t border-gray-200">
         <h2 className="text-3xl font-semibold mb-6 text-center md:text-left">
           What’s Included in a Climate Co Heater Service?
         </h2>
