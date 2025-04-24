@@ -48,7 +48,7 @@ export default function Home() {
             <img src={gasHeater} alt="Gas Heater Service & Repair" className="mx-auto mb-4 rounded max-h-40 object-contain" />
             <div className="flex-grow">
 
-              <h3 className="text-xl font-semibold mb-2">Gas Heater Service & Repair</h3>
+              <h3 className="text-xl font-semibold mb-2">Heater Service & Repair</h3>
               <p className="mb-4">Stay safe & warm with regular servicing & expert repairs for gas heaters.</p>
             </div>
             <a href="/gas-heater-service" className="text-accent font-medium hover:underline">Learn More →</a>
