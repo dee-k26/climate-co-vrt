@@ -18,12 +18,17 @@ export default function HeaterService() {
           <h1 className="text-5xl font-bold mb-4">Heater Service & Repair</h1>
           <p className="text-lg mb-6">
             Stay warm with expert heating repairs and maintenance from Climate Co.
+            We service all major residential heating systems across the Surf Coast & Bellarine.
           </p>
-          <a href="/contact" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+          <a href="#contact-form" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
             Book Now
           </a>
         </div>
       </section>
+
+
+
+      {/* Notice any of these */}
 
       <section className="max-w-6xl mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row items-center gap-8">
@@ -39,6 +44,8 @@ export default function HeaterService() {
             </ul>
           </div>
 
+
+
           {/* Image */}
           <div className="md:w-1/2">
             <img
@@ -49,24 +56,47 @@ export default function HeaterService() {
           </div>
         </div>
       </section>
+      {/* Types of Heaters */}
+      <section className="max-w-6xl mx-auto px-4 py-12 border-t border-gray-200 text-left">
+        <h2 className="text-3xl font-semibold mb-4 text-center md:text-left">We Service All Residential Heating Systems</h2>
+        <p className="mb-6">
+          Whether you’ve got a modern split system or a decorative gas fireplace, our licensed techs have you covered:
+        </p>
+        <ul className="list-disc list-inside space-y-2 md:columns-2">
+          <li>Gas Ducted Heaters</li>
+          <li>Gas Space Heaters</li>
+          <li>Wall-Hung Split Systems</li>
+          <li>Ducted Split Systems</li>
+          <li>Decorative Gas Log Fireplaces</li>
+        </ul>
+        <div className="mt-6 text-center">
+          <a href="#contact-form" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+            Book Now
+          </a>
+        </div>
+      </section>
 
 
       {/* Content Section */}
-      <section className="max-w-6xl mx-auto px-4 py-8 md:text-left border-t border-gray-200">
+      {/* Why Service Matters */}
+      <section className="max-w-6xl mx-auto px-4 py-12 border-t border-gray-200 text-left">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <img src={heaterServiceImage} alt="Gas Heater Service" className="w-full md:w-1/2 rounded shadow-md" />
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-semibold mb-4">Why Regular Gas Heater Servicing is Essential</h2>
-            <p className="mb-4">Regular heater servicing prevents carbon monoxide leaks, ensures safety, and improves energy efficiency.</p>
+            <h2 className="text-3xl font-semibold mb-4">Why Regular Servicing is Essential</h2>
+            <p className="mb-4">
+              Regular servicing isn’t just about performance — it’s about safety. Gas appliances can pose risks if left unchecked.
+            </p>
             <ul className="list-disc list-inside space-y-2">
-              <li>Ensure your heater is operating safely</li>
-              <li>Detect and prevent gas leaks</li>
-              <li>Improve heating efficiency and reduce energy bills</li>
-              <li>Extend the lifespan of your heating system</li>
+              <li>Prevent carbon monoxide leaks</li>
+              <li>Comply with landlord/insurance requirements</li>
+              <li>Catch faults before they become breakdowns</li>
+              <li>Maximise efficiency & lifespan of your system</li>
             </ul>
           </div>
         </div>
       </section>
+
 
       <section className="max-w-6xl mx-auto px-4 py-8 text-left justify-center border-t border-gray-200">
         <h2 className="text-3xl font-semibold mb-6 text-center md:text-left">
@@ -86,15 +116,20 @@ export default function HeaterService() {
             <li>Friendly advice from a licensed tech</li>
           </ul>
         </div>
+        <div className="mt-6 text-center">
+          <a href="#contact-form" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+            Book a Service
+          </a>
+        </div>
       </section>
 
 
 
 
       {/* CTA Section */}
-      <section className="bg-secondary py-16 px-4 text-center">
+      <section id="contact-form" className="bg-secondary py-16 px-4 text-center">
         <h2 className="text-3xl font-semibold mb-4">Book Your Heater Service Today</h2>
-        <p className="mb-8">Ensure your gas heater is safe and running efficiently.</p>
+        <p className="mb-8">We’re locals you can trust — fast, reliable, and fully licensed.</p>
         <div className="max-w-2xl mx-auto">
           <ContactForm />
         </div>
