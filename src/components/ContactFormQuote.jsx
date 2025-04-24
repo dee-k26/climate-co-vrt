@@ -43,8 +43,18 @@ export default function ContactFormQuote() {
       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
       await response.json();
-      navigate("/thank-you");
+      // ✅ Push GTM conversion event
+      if (typeof window !== "undefined" && window.dataLayer) {
+        window.dataLayer.push({
+          event: "form_submission",
+        });
+      }
 
+      // ✅ Slight delay before redirect to allow tag to fire
+      setTimeout(() => {
+        navigate("/thank-you");
+      }, 200);
+      
       setFormData({
         firstName: "",
         lastName: "",
