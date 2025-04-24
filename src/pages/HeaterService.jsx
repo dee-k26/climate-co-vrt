@@ -189,7 +189,7 @@ export default function HeaterService() {
       </section>
 
       {/* Notice any of these */}
-      <section className="max-w-6xl mx-auto px-4 py-12 text-center">
+      <section className="max-w-6xl mx-auto md:px-4 px-2 py-12 text-center">
         <div className="flex flex-col md:flex-row items-center gap-8 fade-in-scroll">
           <div className="md:w-1/2 text-center bg-secondary/30 rounded-2xl p-6 shadow-md w-full">
             <h2 className="text-3xl font-semibold mb-4">Noticed Any of These?</h2>
@@ -213,7 +213,7 @@ export default function HeaterService() {
       </section>
 
       {/* Types of Heaters */}
-      <section className="max-w-6xl mx-auto px-4 py-12 border-t border-gray-200 text-center">
+      <section className="max-w-6xl mx-auto md:px-4 px-2 py-12 border-t border-gray-200 text-center">
         <div className="bg-secondary/30 rounded-2xl p-6 shadow-md w-full md:w-4/5 mx-auto fade-in-scroll">
           <h2 className="text-3xl font-semibold mb-4">We Service All Residential Heating Systems</h2>
           <p className="mb-6">
@@ -237,7 +237,7 @@ export default function HeaterService() {
       </section>
 
       {/* Why Service Matters */}
-      <section className="max-w-6xl mx-auto px-4 py-12 text-center">
+      <section className="max-w-6xl mx-auto md:px-4 px-2 py-12 text-center">
         <div className="flex flex-col md:flex-row items-center gap-8 fade-in-scroll">
           <div className="md:w-1/2">
             <img src={heaterServiceImage} alt="Gas Heater Inspection" className="rounded shadow-md w-full" />
@@ -253,12 +253,17 @@ export default function HeaterService() {
               <li>Catch faults before they become breakdowns</li>
               <li>Maximise efficiency & lifespan of your system</li>
             </ul>
+            <div className="mt-6 text-center">
+              <a href="#contact-form" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+                Book a Service
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* What's Included */}
-      <section className="max-w-6xl mx-auto px-4 py-12 text-center justify-center border-t border-gray-200">
+      <section className="max-w-6xl mx-auto md:px-4 px-2 py-12 text-center justify-center border-t border-gray-200">
         <div className="bg-secondary/30 rounded-2xl p-6 shadow-md w-full md:w-4/5 mx-auto fade-in-scroll">
           <h2 className="text-3xl font-semibold mb-6">
             What’s Included in a Climate Co Heater Service?
