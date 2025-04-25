@@ -21,7 +21,7 @@ export default function Footer() {
             <li><Link to="/contact" className="hover:underline">About Us</Link></li>
             <li><Link to="/aircon-installation" className="hover:underline">Aircon Installation</Link></li>
             <li><Link to="/aircon-service" className="hover:underline">Aircon Service & Repair</Link></li>
-            <li><Link to="/gas-heater-service" className="hover:underline">Heater Service & Repair</Link></li>
+            <li><Link to="/heater-service" className="hover:underline">Heater Service & Repair</Link></li>
             <li><Link to="/government-rebate" className="hover:underline">Rebates</Link></li>
             <li><Link to="/contact" className="hover:underline">Contact</Link></li>
           </ul>
