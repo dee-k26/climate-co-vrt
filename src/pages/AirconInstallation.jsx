@@ -5,13 +5,13 @@ import airconBg from '../assets/girloncouchaircon.jpg';
 
 export default function AirconInstallation() {
   return (
-    <div className="text-text bg-white text-center">
+    <div className="body">
       {/* Header Section */}
       <section
-        className="bg-secondary text-secondarytext overflow-hidden py-24 px-4 text-center"
+        className="hero-section"
       >
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4">Air Conditioning Installation</h1>
+          <h1 className="section-heading">Air Conditioning Installation</h1>
           <p className="text-lg mb-6">Professional installation for split systems, ducted aircon, and multi-head units.</p>
           <a href="/contact" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
             Get a Free Quote
@@ -23,10 +23,10 @@ export default function AirconInstallation() {
       <section className="max-w-6xl mx-auto px-4 py-16 md:text-left">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <img src={airconInstallImage} alt="Aircon Installation" className="w-full md:w-1/3 rounded shadow-md" />
-          <div className="md:w-1/2">
+          <div className="card-box">
             <h2 className="text-3xl font-semibold mb-4">Why Choose Climate Co for Your Aircon Installation?</h2>
             <p className="mb-4">We provide expert installation services tailored to your home or business needs, ensuring energy efficiency and long-term performance.</p>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-checks">
               <li>Professional split system & ducted aircon installation</li>
               <li>High-quality workmanship with a satisfaction guarantee</li>
               <li>Energy-efficient systems to lower your power bills</li>

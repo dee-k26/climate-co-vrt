@@ -2,3 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .card-box {
+        @apply md:w-1/2 text-center bg-secondary/30 rounded-2xl p-6 shadow-md w-full;
+    }
+
+    .btn-primary {
+        @apply inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all
+    }
+
+    .section-wrap {
+        @apply max-w-6xl mx-auto md:px-4 px-2 py-12 text-center;
+    }
+
+
+    .section-heading {
+        @apply text-4xl font-bold mb-4;
+    }
+
+    .section-subheading {
+        @apply text-lg mb-6;
+    }
+
+    .list-checks {
+        @apply list-disc list-inside space-y-2 text-left;
+    }
+
+    .img-rounded {
+        @apply rounded shadow-md w-full;
+    }
+
+    .body {
+       @apply text-text bg-white text-center;
+    }
+    
+    .hero-section {
+        @apply bg-secondary text-secondaryText overflow-hidden py-24 px-4 text-center;
+    }
+
+    .section-div-bg {
+        @apply bg-secondary/30 rounded-2xl p-6 shadow-md w-full md:w-4/5 mx-auto;
+    }
+}

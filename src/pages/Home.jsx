@@ -8,11 +8,11 @@ import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
-    <div className="text-text bg-white text-center">
+    <div className="body">
       {/* Hero Section */}
-      <section className="bg-secondary text-secondarytext overflow-hidden py-24 px-4 text-center">
+      <section className="hero-section">
         <div className="max-w-3xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Heating & Cooling Specialists</h1>
+          <h1 className="section-heading">Heating & Cooling Specialists</h1>
           <p className="text-lg mb-6">Reliable, affordable, and expert service for all your heating and cooling needs.</p>
           <a href="/contact" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
             Get a Free Quote
@@ -59,7 +59,7 @@ export default function Home() {
       {/* Government Rebates Section */}
       <section className="flex flex-col md:flex-row md:text-left items-center justify-center max-w-6xl mx-auto px-4 py-16 gap-8 ">
         <img src={rebate} alt="Government Rebates" className="max-h-120 rounded shadow-md" />
-        <div className="md:w-1/2">
+        <div className="card-box">
           <h2 className="text-3xl font-semibold mb-4">Government Rebates</h2>
           <p className="mb-4">Save on installation costs with available government incentives for energy-efficient heating & cooling solutions.</p>
           <a href="/government-rebate" className="text-accent font-medium hover:underline">Find Out More →</a>
@@ -68,7 +68,7 @@ export default function Home() {
 
       {/* Maintenance Section */}
       <section className="flex flex-col-reverse md:flex-row md:text-left items-center max-w-6xl mx-auto px-4 py-16 gap-8">
-        <div className="md:w-1/2">
+        <div className="card-box">
           <h2 className="text-3xl font-semibold mb-4">The Importance of Regular Maintenance</h2>
           <p className="mb-4">Proper maintenance extends the lifespan of your heating & cooling system, improves efficiency, and ensures safe operation. Our servicing includes inspections, cleaning, and minor adjustments to keep your system running smoothly.</p>
           <a href="/contact" className="text-accent font-medium hover:underline">Schedule a Service →</a>

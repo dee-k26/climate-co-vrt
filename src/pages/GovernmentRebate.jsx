@@ -4,10 +4,10 @@ import ContactFormQuote from "../components/ContactFormQuote";
 
 export default function GovernmentRebate() {
   return (
-    <div className="text-text bg-white text-center">
+    <div className="body">
       {/* Header Section */}
-      <section className="bg-secondary text-secondarytext overflow-hidden py-24 px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Government Rebates</h1>
+      <section className="hero-section">
+        <h1 className="section-heading">Government Rebates</h1>
         <p className="text-lg mb-6">Find out if you qualify for up to $8,000 in rebates for energy-efficient upgrades.</p>
         <a href="/contact" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
           Get a Free Quote
@@ -18,9 +18,9 @@ export default function GovernmentRebate() {
       <section className="py-16 px-4 max-w-6xl mx-auto md:text-left">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <img src={rebateImage} alt="Rebate Promotion" className="max-h-120 rounded shadow-md" />
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 text-center bg-secondary/30 rounded-2xl p-6 shadow-md w-full">
             <h2 className="text-3xl font-semibold mb-4">Rebate Tiers</h2>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-checks">
               <li>Remove Gas Ducted Heater + Add Cooling + Install Ducted Split: <strong>Up to $8,000</strong></li>
               <li>Remove Gas Ducted Heater + Install Ducted Split: <strong>Up to $6,000</strong></li>
               <li>Remove Gas Space Heater + Install Wall Split: <strong>$1,200</strong></li>
