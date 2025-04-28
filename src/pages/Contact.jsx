@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
-import aboutImage from "../assets/thank you small.jpg";
+import aboutImage from "../assets/thank-you.webp";
 
 export default function AboutContact() {
   return (

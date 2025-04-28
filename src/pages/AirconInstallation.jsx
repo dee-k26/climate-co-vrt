@@ -1,7 +1,6 @@
 import React from "react";
 import ContactFormQuote from "../components/ContactFormQuote";
 import airconInstallImage from "../assets/aircon-install.png";
-import airconBg from '../assets/girloncouchaircon.jpg';
 
 export default function AirconInstallation() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import rebateImage from "../assets/rebate.jpg";
+import rebateImage from "../assets/rebate.webp";
 import ContactFormQuote from "../components/ContactFormQuote";
 
 export default function GovernmentRebate() {

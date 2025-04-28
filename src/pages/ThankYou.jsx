@@ -1,5 +1,5 @@
 import React from "react";
-import thankYouImage from "../assets/thank you small.jpg";
+import thankYouImage from "../assets/thank-you.webp";
 
 export default function ThankYou() {
   return (

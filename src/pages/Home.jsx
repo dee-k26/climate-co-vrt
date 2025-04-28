@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import airconInstall from "../assets/aircon-install.png";
-import airconRepair from "../assets/aircon-repair.jpg";
-import gasHeater from "../assets/gas-heater.jpg";
-import maintenance from "../assets/maintenance.jpg";
-import rebate from "../assets/rebate.jpg";
+import airconRepair from "../assets/aircon-repair.webp";
+import gasHeater from "../assets/gas-heater.webp";
+import maintenance from "../assets/maintenance.webp";
+import rebate from "../assets/rebate.webp";
 import ContactForm from "../components/ContactForm";
 
 

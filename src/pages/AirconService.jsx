@@ -1,7 +1,6 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
-import airconServiceImage from "../assets/aircon-repair.jpg";
-import airconserviceBg from '../assets/Wall-Hung-Split-System.jpg';
+import airconServiceImage from "../assets/aircon-repair.webp";
 
 export default function AirconService() {
   return (
