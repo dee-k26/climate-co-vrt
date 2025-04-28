@@ -66,13 +66,13 @@ export default function HeaterService() {
         <meta name="description" content="Stay warm with expert heater repairs and servicing. Gas, split, and ducted systems. $220 fixed diagnosis. Serving Ocean Grove, Geelong, and the Surf Coast." />
         <meta property="og:title" content="Heater Service & Repair | Climate Co" />
         <meta property="og:description" content="Book your $220 fixed-price heater service. We diagnose and service all residential heating systems across Geelong and the Surf Coast." />
-        <meta property="og:image" content="https://theclimateco.com.au/logo512.png" />
+        <meta property="og:image" content="https://climateco.au/logo512.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://theclimateco.com.au/heater-service" />
+        <meta property="og:url" content="https://tlimateco.au/heater-service" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Heater Service & Repair | Climate Co" />
         <meta name="twitter:description" content="Fast, trusted heating repairs across Geelong, Bellarine and Surf Coast. Gas, split, ducted." />
-        <meta name="twitter:image" content="https://theclimateco.com.au/logo512.png" />
+        <meta name="twitter:image" content="https://climateco.au/logo512.png" />
       </Helmet>
 
       <div className="body">
