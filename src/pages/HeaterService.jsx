@@ -122,16 +122,20 @@ export default function HeaterService() {
             <p className="mb-6">
               Whether you’ve got a modern split system or a decorative gas fireplace, our licensed techs have you covered:
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left mx-auto max-w-2xl">
-              <ul className="list-checks">
-                <li>Gas Ducted Heaters</li>
-                <li>Gas Space Heaters</li>
-                <li>Wall-Hung Split Systems</li>
-              </ul>
-              <ul className="list-checks">
-                <li>Ducted Split Systems</li>
-                <li>Decorative Gas Log Fireplaces</li>
-              </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mx-auto max-w-2xl">
+              <div>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Gas Ducted Heaters</li>
+                  <li>Gas Space Heaters</li>
+                  <li>Wall-Hung Split Systems</li>
+                </ul>
+              </div>
+              <div>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Ducted Split Systems</li>
+                  <li>Decorative Gas Log Fireplaces</li>
+                </ul>
+              </div>
             </div>
             <div className="mt-6 text-center">
               <a href="#contact-form" className="btn-primary">
