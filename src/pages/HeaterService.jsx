@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ContactForm from "../components/ContactForm";
 import heaterServiceImage from "../assets/gas-heater.webp";
-import heaterService from "../assets/heaterService.webp";
+import heaterService from "../assets/heaterservice.webp";
 import { Helmet } from "react-helmet";
 
 export default function HeaterService() {
