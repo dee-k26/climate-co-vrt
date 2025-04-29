@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import aboutImage from "../assets/thank-you.webp";
+import TestimonialCard from "../components/TestimonialCard";
 
 export default function AboutContact() {
   return (
@@ -26,6 +27,8 @@ export default function AboutContact() {
           <img src={aboutImage} alt="Team at Climate Co" className="w-full md:w-1/2 rounded shadow-md" />
         </div>
       </section>
+
+      <TestimonialCard />
 
       {/* Contact Info & Form */}
       <section className="py-16 px-4 max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:text-left">
