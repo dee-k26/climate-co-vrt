@@ -74,7 +74,7 @@ export default function HeaterService() {
               Whether you’ve got a modern split system or a decorative gas fireplace, our licensed techs have you covered:
             </p>
             <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-6">
               <div>
                 <ul className="list-checks">
                   <li>Gas Ducted Heaters</li>
@@ -133,7 +133,7 @@ export default function HeaterService() {
               What’s Included in a Climate Co Heater Service?
             </h2>
             <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-6">
                 <div>
                   <ul className="list-checks">
                     <li>Carbon monoxide testing</li>
