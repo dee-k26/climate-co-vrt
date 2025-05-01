@@ -1,7 +1,20 @@
 import React from "react";
+import { useEffect } from "react";
 import thankYouImage from "../assets/thank-you.webp";
 
 export default function ThankYou() {
+
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'page_view',
+        page_path: window.location.pathname,
+        page_url: window.location.href
+      });
+    }
+  }, []);
+
   return (
     <div className="text-text bg-white py-16 px-4 text-center">
       <div className="max-w-3xl mx-auto">
