@@ -73,19 +73,21 @@ export default function HeaterService() {
             <p className="mb-6">
               Whether you’ve got a modern split system or a decorative gas fireplace, our licensed techs have you covered:
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mx-auto max-w-2xl">
+            <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
               <div>
-                <ul className="list-disc list-inside text-sm space-y-1">
+                <ul className="list-checks">
                   <li>Gas Ducted Heaters</li>
                   <li>Gas Space Heaters</li>
                   <li>Wall-Hung Split Systems</li>
                 </ul>
               </div>
               <div>
-                <ul className="list-disc list-inside text-sm space-y-1">
+                <ul className="list-checks">
                   <li>Ducted Split Systems</li>
                   <li>Decorative Gas Log Fireplaces</li>
                 </ul>
+              </div>
               </div>
             </div>
             <div className="mt-6 text-center">
@@ -129,19 +131,23 @@ export default function HeaterService() {
               What’s Included in a Climate Co Heater Service?
             </h2>
             <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <ul className="list-checks">
-                  <li>Carbon monoxide testing</li>
-                  <li>Cleaning of burners and components</li>
-                  <li>Checking flue and ventilation systems</li>
-                  <li>Inspection of ignition systems</li>
-                </ul>
-                <ul className="list-checks">
-                  <li>Testing of thermostat functionality</li>
-                  <li>General safety check</li>
-                  <li>Service documentation provided</li>
-                  <li>Friendly advice from a licensed tech</li>
-                </ul>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+                <div>
+                  <ul className="list-checks">
+                    <li>Carbon monoxide testing</li>
+                    <li>Cleaning of burners and components</li>
+                    <li>Checking flue and ventilation systems</li>
+                    <li>Inspection of ignition systems</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-checks">
+                    <li>Testing of thermostat functionality</li>
+                    <li>General safety check</li>
+                    <li>Service documentation provided</li>
+                    <li>Friendly advice from a licensed tech</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="mt-6 text-center">
