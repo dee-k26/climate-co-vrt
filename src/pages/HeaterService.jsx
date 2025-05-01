@@ -109,12 +109,14 @@ export default function HeaterService() {
               <p className="mb-4">
                 Regular servicing isn’t just about performance — it’s about safety. Gas appliances can pose risks if left unchecked.
               </p>
+              <div className="flex justify-center">
               <ul className="list-checks">
                 <li>Prevent carbon monoxide leaks</li>
                 <li>Comply with landlord insurance requirements</li>
                 <li>Catch faults before they become breakdowns</li>
                 <li>Maximise efficiency & lifespan of your system</li>
               </ul>
+              </div>
               <div className="mt-6 text-center">
                 <a href="#contact-form" className="btn-primary">
                   Book a Service
