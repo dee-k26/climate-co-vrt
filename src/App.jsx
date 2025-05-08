@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
 import Home from "./pages/Home";
 import AirconInstallation from "./pages/AirconInstallation";
 import HeaterService from "./pages/HeaterService";
@@ -12,6 +11,7 @@ import Contact from "./pages/Contact";
 import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ThankYou from "./pages/ThankYou";
+import ChatDiagnosis from "./components/chat-diagnosis";
 
 export default function App() {
   return (
@@ -29,6 +29,7 @@ export default function App() {
             <Route path="/terms-and-conditions" element={<TermsConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/diagnose" element={<ChatDiagnosis />} />
           </Routes>
         </main>
         <Footer />
