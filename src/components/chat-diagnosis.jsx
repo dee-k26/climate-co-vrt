@@ -23,7 +23,7 @@ export default function ChatDiagnosis() {
   const handleDiagnosis = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/diagnoseAI", {
+      const res = await fetch("https://climate-co-vrt-ai-backend.onrender.com/api/diagnoseAI", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ systemType, brand, model, description, notes }),
@@ -58,7 +58,7 @@ export default function ChatDiagnosis() {
       );
 
 
-      const res = await fetch("/api/sendToTech", {
+      const res = await fetch("https://climate-co-vrt-ai-backend.onrender.com/api/sendToTech", {
         method: "POST",
         body: formData,
       });
