@@ -76,48 +76,58 @@ export default function ChatDiagnosis() {
 
   return (
 
-    <div className= "body p-4">
-    <div className="max-w-xl mx-auto p-4 shadow-lg rounded-md bg-secondary">
-      <h1 className="text-2xl font-bold mb-4">HVAC AI Diagnosis</h1>
+    <>
+      <Helmet>
+        <title>AI Diagnosis | Climate Co</title>
+        <meta property="og:image" content="/ai-logo512.png" />
+        <meta name="description" content="Try our AI-powered HVAC diagnostic tool to get quick troubleshooting help." />
+        <meta property="og:title" content="AI HVAC Diagnosis Tool" />
+        <meta property="og:url" content="https://climateco.au/diagnose" />
+      </Helmet>
 
-      {step === 1 && (
-        <div className="space-y-4">
-          <input type="text" className="w-full border p-2" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
-          <select className="w-full border p-2" value={systemType} onChange={(e) => setSystemType(e.target.value)}>
-            <option value="">Select System Type</option>
-            <option>Gas Ducted Heater</option>
-            <option>Gas Decorative Log Fireplace</option>
-            <option>Gas Wall Heater</option>
-            <option>Ducted Split System</option>
-            <option>Wall Split System</option>
-            <option>Evaporative</option>
-            <option>Other</option>
-          </select>
-          <input type="text" className="w-full border p-2" placeholder="Brand" value={brand} onChange={(e) => setBrand(e.target.value)} />
-          <input type="text" className="w-full border p-2" placeholder="Model (optional)" value={model} onChange={(e) => setModel(e.target.value)} />
-          <textarea className="w-full border p-2" rows="3" placeholder="Describe the issue" value={description} onChange={(e) => setDescription(e.target.value)} />
-          <textarea className="w-full border p-2" rows="2" placeholder="Extra notes (optional)" value={notes} onChange={(e) => setNotes(e.target.value)} />
-          <button onClick={handleDiagnosis} disabled={loading} className="bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
-            {loading ? "Diagnosing..." : "Get AI Diagnosis"}
-          </button>
+      <div className="body p-4">
+        <div className="max-w-xl mx-auto p-4 shadow-lg rounded-md bg-secondary">
+          <h1 className="text-2xl font-bold mb-4">HVAC AI Diagnosis</h1>
+
+          {step === 1 && (
+            <div className="space-y-4">
+              <input type="text" className="w-full border p-2" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
+              <select className="w-full border p-2" value={systemType} onChange={(e) => setSystemType(e.target.value)}>
+                <option value="">Select System Type</option>
+                <option>Gas Ducted Heater</option>
+                <option>Gas Decorative Log Fireplace</option>
+                <option>Gas Wall Heater</option>
+                <option>Ducted Split System</option>
+                <option>Wall Split System</option>
+                <option>Evaporative</option>
+                <option>Other</option>
+              </select>
+              <input type="text" className="w-full border p-2" placeholder="Brand" value={brand} onChange={(e) => setBrand(e.target.value)} />
+              <input type="text" className="w-full border p-2" placeholder="Model (optional)" value={model} onChange={(e) => setModel(e.target.value)} />
+              <textarea className="w-full border p-2" rows="3" placeholder="Describe the issue" value={description} onChange={(e) => setDescription(e.target.value)} />
+              <textarea className="w-full border p-2" rows="2" placeholder="Extra notes (optional)" value={notes} onChange={(e) => setNotes(e.target.value)} />
+              <button onClick={handleDiagnosis} disabled={loading} className="bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+                {loading ? "Diagnosing..." : "Get AI Diagnosis"}
+              </button>
+            </div>
+          )}
+
+          {step === 2 && (
+            <div className="space-y-4">
+              <h2 className="text-lg font-bold">AI Diagnosis:</h2>
+              <div className="bg-gray-100 border border-gray-300 rounded-md p-4 shadow-sm max-h-48 overflow-y-auto text-sm leading-relaxed text-gray-800 whitespace-pre-wrap">{diagnosis}</div>
+
+              <h3 className="text-md font-semibold">Need a technician?</h3>
+              <input type="email" className="w-full border p-2" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input type="tel" className="w-full border p-2" placeholder="Mobile Number" value={mobile} onChange={(e) => setMobile(e.target.value)} />
+              <input type="text" className="w-full border p-2" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)} />
+              <button onClick={handleSendToTech} disabled={loading} className="bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+                {loading ? "Sending..." : "Send to Tech"}
+              </button>
+            </div>
+          )}
         </div>
-      )}
-
-      {step === 2 && (
-        <div className="space-y-4">
-          <h2 className="text-lg font-bold">AI Diagnosis:</h2>
-          <div className="bg-gray-100 border border-gray-300 rounded-md p-4 shadow-sm max-h-48 overflow-y-auto text-sm leading-relaxed text-gray-800 whitespace-pre-wrap">{diagnosis}</div>
-
-          <h3 className="text-md font-semibold">Need a technician?</h3>
-          <input type="email" className="w-full border p-2" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <input type="tel" className="w-full border p-2" placeholder="Mobile Number" value={mobile} onChange={(e) => setMobile(e.target.value)} />
-          <input type="text" className="w-full border p-2" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)} />
-          <button onClick={handleSendToTech} disabled={loading} className="bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
-            {loading ? "Sending..." : "Send to Tech"}
-          </button>
-        </div>
-      )}
-    </div>
-    </div>
-  );
+      </div>
+      </>
+      );
 }
