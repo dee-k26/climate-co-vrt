@@ -97,7 +97,14 @@ export default function ChatDiagnosis() {
 
       <div className="body p-4">
         <div className="max-w-xl mx-auto p-4 shadow-lg rounded-md bg-secondary">
-          <h1 className="text-2xl font-bold mb-4">HVAC AI Diagnosis</h1>
+          <div className="flex items-center gap-3 mb-4 justify-center">
+            <img
+              src="/ai-logo512.png"
+              alt="AI Logo"
+              className="w-14 h-14 md:w-20 md:h-20"
+            />
+            <h1 className="text-xl md:text-2xl font-bold">HVAC AI Diagnosis</h1>
+          </div>
 
           {step === 1 && (
             <div className="space-y-4">
