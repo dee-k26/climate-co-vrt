@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import airconServiceImage from "../assets/aircon-repair.webp";
+import AiDiagnosis from "../pages/AiDiagnosis";
 
 export default function AirconService() {
   return (
@@ -8,13 +9,13 @@ export default function AirconService() {
       {/* Header Section */}
       <section
         className="hero-section"
-        >
+      >
         <div className="max-w-4xl mx-auto px-4 text-center">
-        <h1 className="section-heading">Air Conditioning Service & Repairs</h1>
-        <p className="text-lg mb-6">Stay cool with our expert aircon servicing, repairs, and maintenance.</p>
-        <a href="/contact" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
-          Book Now
-        </a>
+          <h1 className="section-heading">Air Conditioning Service & Repairs</h1>
+          <p className="text-lg mb-6">Stay cool with our expert aircon servicing, repairs, and maintenance.</p>
+          <a href="/contact" className="inline-block bg-accent hover:bg-hover text-white font-semibold py-2 px-6 rounded-full transition-all">
+            Book Now
+          </a>
         </div>
       </section>
 
@@ -32,6 +33,17 @@ export default function AirconService() {
               <li>Increase the lifespan of your AC unit</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* Smart Diagnosis Section */}
+      <section className="max-w-6xl mx-auto md:px-4 px-2 py-12 text-center border-t border-gray-200">
+        <div className="bg-white">
+          <h2 className="text-3xl font-semibold mb-4">Not Sure What’s Wrong?</h2>
+          <p className="mb-6">
+            Use our free AI tool to get a fast, safe diagnosis before you book a service.
+          </p>
+          <AiDiagnosis />
         </div>
       </section>
 

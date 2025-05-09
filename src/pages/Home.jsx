@@ -6,7 +6,7 @@ import gasHeater from "../assets/gas-heater.webp";
 import maintenance from "../assets/maintenance.webp";
 import rebate from "../assets/rebate.webp";
 import ContactForm from "../components/ContactForm";
-
+import AiDiagnosis from "../pages/AiDiagnosis";
 
 export default function Home() {
   return (
@@ -76,6 +76,17 @@ export default function Home() {
           <Link to="/contact" className="text-accent font-medium hover:underline">Schedule a Service →</Link>
         </div>
         <img src={maintenance} alt="Heating & Cooling Maintenance" className="w-full md:w-1/2 rounded shadow-md" />
+      </section>
+
+      {/* Smart Diagnosis Section */}
+      <section className="max-w-6xl mx-auto md:px-4 px-2 py-12 text-center border-t border-gray-200">
+        <div className="bg-white">
+          <h2 className="text-3xl font-semibold mb-4">Not Sure What’s Wrong?</h2>
+          <p className="mb-6">
+            Use our free AI tool to get a fast, safe diagnosis before you book a service.
+          </p>
+          <AiDiagnosis />
+        </div>
       </section>
 
       {/* Contact Form Section */}
