@@ -5,6 +5,7 @@ import heaterServiceImage from "../assets/gas-heater.webp";
 import heaterService from "../assets/heaterservice.webp";
 import TestimonialCard from "../components/TestimonialCard";
 import FAQAccordion from "../components/FAQAccordion";
+import AiDiagnosis from "./AiDiagnosis";
 
 
 export default function HeaterService() {
@@ -74,20 +75,20 @@ export default function HeaterService() {
               Whether you’ve got a modern split system or a decorative gas fireplace, our licensed techs have you covered:
             </p>
             <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-6">
-              <div>
-                <ul className="list-checks">
-                  <li>Gas Ducted Heaters</li>
-                  <li>Gas Space Heaters</li>
-                  <li>Wall-Hung Split Systems</li>
-                </ul>
-              </div>
-              <div>
-                <ul className="list-checks">
-                  <li>Ducted Split Systems</li>
-                  <li>Decorative Gas Log Fireplaces</li>
-                </ul>
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-6">
+                <div>
+                  <ul className="list-checks">
+                    <li>Gas Ducted Heaters</li>
+                    <li>Gas Space Heaters</li>
+                    <li>Wall-Hung Split Systems</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-checks">
+                    <li>Ducted Split Systems</li>
+                    <li>Decorative Gas Log Fireplaces</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="mt-6 text-center">
@@ -110,12 +111,12 @@ export default function HeaterService() {
                 Regular servicing isn’t just about performance — it’s about safety. Gas appliances can pose risks if left unchecked.
               </p>
               <div className="flex justify-center">
-              <ul className="list-checks">
-                <li>Prevent carbon monoxide leaks</li>
-                <li>Comply with landlord insurance requirements</li>
-                <li>Catch faults before they become breakdowns</li>
-                <li>Maximise efficiency & lifespan of your system</li>
-              </ul>
+                <ul className="list-checks">
+                  <li>Prevent carbon monoxide leaks</li>
+                  <li>Comply with landlord insurance requirements</li>
+                  <li>Catch faults before they become breakdowns</li>
+                  <li>Maximise efficiency & lifespan of your system</li>
+                </ul>
               </div>
               <div className="mt-6 text-center">
                 <a href="#contact-form" className="btn-primary">
@@ -123,6 +124,17 @@ export default function HeaterService() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Smart Diagnosis Section */}
+        <section className="max-w-6xl mx-auto md:px-4 px-2 py-12 text-center border-t border-gray-200">
+          <div className="bg-white">
+            <h2 className="text-3xl font-semibold mb-4">Not Sure What’s Wrong?</h2>
+            <p className="mb-6">
+              Use our free AI tool to get a fast, safe diagnosis before you book a service.
+            </p>
+            <AiDiagnosis />
           </div>
         </section>
 
