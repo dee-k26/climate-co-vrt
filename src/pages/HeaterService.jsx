@@ -5,7 +5,7 @@ import heaterServiceImage from "../assets/gas-heater.webp";
 import heaterService from "../assets/heaterservice.webp";
 import TestimonialCard from "../components/TestimonialCard";
 import FAQAccordion from "../components/FAQAccordion";
-import AiDiagnosis from "./AiDiagnosis";
+import AiDiagnosis from "./AiDiagnosis_temp";
 
 
 export default function HeaterService() {

@@ -6,7 +6,7 @@ import gasHeater from "../assets/gas-heater.webp";
 import maintenance from "../assets/maintenance.webp";
 import rebate from "../assets/rebate.webp";
 import ContactForm from "../components/ContactForm";
-import AiDiagnosis from "../pages/AiDiagnosis";
+import AiDiagnosis from "./AiDiagnosis_temp";
 
 export default function Home() {
   return (
