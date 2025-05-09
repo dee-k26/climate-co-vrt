@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
 
 export default function ChatDiagnosis() {
@@ -77,25 +76,7 @@ export default function ChatDiagnosis() {
 
   return (
 
-    <>
-      <Helmet>
-        <title>AI Diagnosis | Climate Co</title>
 
-        {/* Page description */}
-        <meta name="description" content="Try our AI-powered HVAC diagnostic tool to get quick troubleshooting help." />
-
-        {/* Open Graph tags for social/media previews */}
-        <meta property="og:title" content="AI HVAC Diagnosis Tool" />
-        <meta property="og:description" content="Try our AI-powered HVAC diagnostic tool to get quick troubleshooting help." />
-        <meta property="og:image" content="https://climateco.au/ai-logo512.png" />
-        <meta property="og:url" content="https://climateco.au/diagnose" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter card (optional but helpful) */}
-        <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
-
-      <div className="body p-4">
         <div className="max-w-xl mx-auto p-4 shadow-lg rounded-md bg-secondary">
           <div className="flex items-center gap-3 mb-4 justify-center">
             <img
@@ -144,7 +125,5 @@ export default function ChatDiagnosis() {
             </div>
           )}
         </div>
-      </div>
-    </>
   );
 }

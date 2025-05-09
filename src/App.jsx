@@ -11,7 +11,7 @@ import Contact from "./pages/Contact";
 import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ThankYou from "./pages/ThankYou";
-import ChatDiagnosis from "./components/chat-diagnosis";
+import aiDiagnosis from "./pages/aiDiagnosis";
 
 export default function App() {
   return (
@@ -29,7 +29,7 @@ export default function App() {
             <Route path="/terms-and-conditions" element={<TermsConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/diagnose" element={<ChatDiagnosis />} />
+            <Route path="/diagnose" element={<aiDiagnosis />} />
           </Routes>
         </main>
         <Footer />
