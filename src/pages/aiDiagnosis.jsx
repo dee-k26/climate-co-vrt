@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import ChatDiagnosis from "../components/chat-diagnosis";
+import ChatDiagnosis from "../components/ChatDiagnosis";
 
 
-export default function aiDiagnosis() {
+export default function AiDiagnosis() {
 
   return (
 

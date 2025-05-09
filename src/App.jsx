@@ -11,7 +11,8 @@ import Contact from "./pages/Contact";
 import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ThankYou from "./pages/ThankYou";
-import aiDiagnosis from "./pages/aiDiagnosis";
+import AiDiagnosis from "./pages/AiDiagnosis";
+
 
 export default function App() {
   return (
@@ -29,7 +30,7 @@ export default function App() {
             <Route path="/terms-and-conditions" element={<TermsConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/diagnose" element={<aiDiagnosis />} />
+            <Route path="/diagnose" element={<AiDiagnosis />} />
           </Routes>
         </main>
         <Footer />
