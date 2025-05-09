@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import airconServiceImage from "../assets/aircon-repair.webp";
-import AiDiagnosis from "./AiDiagnosis_temp";
+import AiDiagnosis from "./AiDiagnosis";
 
 export default function AirconService() {
   return (
